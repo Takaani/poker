@@ -15,7 +15,7 @@
 
 
     /* -webkit-transform: translate3d(0px, 0px, 0px) rotateX(8deg) rotateY(-10deg) rotateZ(-10deg); */
-    height: 450px;
+    height: 500px;
     background-color: rgb(81, 118, 81);
     /* border: double 80px #0b7520; */
     text-align: center;
@@ -159,88 +159,117 @@ margin: 0 auto;*/
 
 
 
-.frame a#a1 {
+/*.frame img#a1 {
 background: url(../images/prueba/z1.gif);
 }
-.frame a#a2 {
+.frame img#a2 {
 background: url(../images/prueba/z2.gif);
 }
-.frame a#a3 {
+.frame img#a3 {
 background: url(../images/prueba/z3.gif);
 }
-.frame a#a4 {
+.frame img#a4 {
 background: url(../images/prueba/z4.gif);
 }
-.frame a#a5 {
+.frame img#a5 {
 background: url(../images/prueba/z5.gif);
 }
-.frame a#a6 {
+.frame img#a6 {
 background: url(../images/prueba/z6.gif);
 }
-.frame a#a7 {
+.frame img#a7 {
 background: url(../images/prueba/z7.gif);
 }
-.frame a#a8 {
+.frame img#a8 {
 background: url(../images/prueba/z8.gif);
 }
-.frame a#a9 {
+.frame img#a9 {
 background: url(../images/prueba/z9.gif);
 }
-.frame a#a10 {
+.frame img#a10 {
 background: url(../images/prueba/z10.gif);
 }
-.frame a#a11 {
+.frame img#a11 {
 background: url(../images/prueba/z11.gif);
-}
+}*/
 
-.hover a:hover {
+.hover img:hover {
 z-index: 20;
+opacity: 0;
 }
 
-.hover a:hover + a {
+.hover img:hover + img {
 z-index: 30;
+opacity: 0;
 }
  
-.hover a#a1 {
-z-index: 20;
+.hover img#a1 {
+z-index: 20; 
 }
-.hover a#a11:hover {
+.hover img#a3:hover {
 z-index: 10;
 } 
 
 
-.frame a {
-display: block;
-outline: 0;
+.frame img {
+/*display: block;
+outline: 0;*/
 position: absolute;
-left: 0;
+/*left: 0;
 top: 0;
-width: 50%;
-height: 184px;
+width: 100%;
+height: auto; */
+-webkit-transition: z-index 0.9s linear;
+-moz-transition: z-index 0.9s linear;
+-o-transition: z-index 0.9s linear;
+transition: z-index 0.9s linear;
+}
 
--webkit-transition: z-index 0.1s linear;
--moz-transition: z-index 0.1s linear;
--o-transition: z-index 0.1s linear;
-transition: z-index 0.1s linear;
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+
+}
+
+@media (max-device-width: 480px) and (orientation: landscape) {
+
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+
 }
 
 @media (min-width: 992px){
     .top-card {
         margin-top: 80px;
+    } 
+    .player1, .player4{
+        margin-top: -45px;
     }
+}
 
-     .frame a {
-    display: block;
-    outline: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 384px;
+@media (min-width: 768px) and (max-width: 991px) {
 
-    -webkit-transition: z-index 0.1s linear;
-    -moz-transition: z-index 0.1s linear;
-    -o-transition: z-index 0.1s linear;
-    transition: z-index 0.1s linear;
-    }   
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+@media print {
+    
 }
